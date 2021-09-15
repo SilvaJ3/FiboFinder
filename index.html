@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiboFinder</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="h-screen">
+    <header>
+        <div class="w-full bg-gray-600 py-4">
+            <h1 class="text-center text-green-600 text-2xl font-extrabold">FiboFinder</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="section1 flex justify-center items-center h-96">
+            <form class="form-horizontal">
+                <div class="flex flex-col">
+                    <label for="index" class="mb-3 text-2xl">Indiquez une position de la suite de Fibonacci</label>
+                    <span>Jusqu'à 100 positions</span>
+                    <input type="number" id="index" class="form-control px-6 py-3 outline-none border-4 border-gray-700 rounded-full">
+                </div>
+                <button type="submit" class="button px-4 py-2 bg-blue-500 text-white rounded-lg mt-3">Valider</button>
+            </form>
+        </div>
+        <div class="flex justify-center items-center">
+            <table class="table-auto border border-separate border-gray-700">
+                <thead>
+                    <th class='border border-gray-700'>Nombre précédente</th>
+                    <th class='border border-gray-700'>Nombre actuelle</th>
+                    <th class='border border-gray-700'>Nombre suivante</th>
+                    <th class='border border-gray-700'>Chiffre d'or</th>
+                </thead>
+                <tbody>
+                    <td class="text-center border border-gray-700 previous">0</td>
+                    <td class="text-center border border-gray-700 actual">0</td>
+                    <td class="text-center border border-gray-700 next">0</td>
+                    <td class="text-center border border-gray-700 gold">0</td>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
